@@ -1,0 +1,27 @@
+import turtle
+win = turtle.Screen()
+t1 = turtle.Turtle()
+
+t1.fd(100)
+t1.right(110)
+t1.fd(100)
+t1.lt(30)
+t1.fd(100)
+t1.penup()
+p = t1.pos()
+print("x = ", p[0], "y = ", p[1])
+h = t1.heading()
+print("heading = ", h)
+t1.home()
+
+t1.fd(150)
+t1.pendown()
+t1.fd(100)
+t1.pendown()
+
+t1.penup()
+#t1.setpos(p)
+t1.goto(p[0], p[1])
+t1.setheading(-(360 - h))
+#t1.pendown()
+#t1.clear()
